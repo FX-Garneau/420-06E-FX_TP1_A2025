@@ -1,9 +1,10 @@
 ﻿<!doctype html>
-<html data-theme="light" lang="fr">
+<html data-theme="abyss" lang="fr">
 	<head>
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 		<title>Hello world!</title>
+		<link href="./style.css" rel="stylesheet" type="text/css"/>
 		<!-- Tailwind CSS -->
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 		<!-- DaisyUI -->
@@ -11,10 +12,56 @@
 		<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/themes.css" rel="stylesheet" type="text/css"/>
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	</head>
-	<body>
-		<div class="navbar bg-base-100 shadow-md">
-			<div class="navbar-center">
-				<a class="btn btn-ghost text-xl" href="#">Accueil</a>
+	<body class="min-h-screen preview">
+		<div class="container flex flex-col gap-3 *:border max-w-4xl mx-auto p-8">
+			<div class="collapse collapse-arrow bg-base-100">
+				<input checked="checked" name="my-accordion-2" type="radio"/>
+				<div class="collapse-title text-xl font-medium">Description de l’objet expérimenté</div>
+				<div class="collapse-content relative">
+
+					<div class="flex justify-between gap-4">
+						<div class="card card-sm card-compact w-64 grow bg-base-200">
+							<div class="card-body">
+								<div class="card-title">
+
+								</div>
+							</div>
+						</div>
+						<div class="card card-xs card-compact w-64 bg-base-200 glass !shadow-none">
+							<figure class="p-2">
+								<img alt="IR Receiver" src="./img/ir_receiver_crop.png"/>
+							</figure>
+							<div class="card-body">
+								<div class="card-actions justify-between items-center">
+									<h2 class="card-title">Récepteur infrarouge</h2>
+									<button class="btn btn-sm btn-soft btn-primary">Source</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="collapse collapse-arrow bg-base-100">
+				<input name="my-accordion-2" type="radio"/>
+				<div class="collapse-title text-xl font-medium">Usage concret proposé</div>
+				<div class="collapse-content">
+					<p>...</p>
+				</div>
+			</div>
+			<div class="collapse collapse-arrow bg-base-100">
+				<input name="my-accordion-2" type="radio"/>
+				<div class="collapse-title text-xl font-medium">Expérimentations</div>
+				<div class="collapse-content">
+					<p>...</p>
+				</div>
+			</div>
+			<div class="collapse collapse-arrow bg-base-100">
+				<input name="my-accordion-2" type="radio"/>
+				<div class="collapse-title text-xl font-medium">Avis</div>
+				<div class="collapse-content">
+					<p>...</p>
+				</div>
 			</div>
 		</div>
 	</body>
