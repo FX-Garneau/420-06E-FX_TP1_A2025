@@ -1,289 +1,293 @@
 ﻿<!doctype html>
 <html data-theme="abyss" lang="fr">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-		<title>TP1</title>
-		<link href="./style.css" rel="stylesheet" type="text/css"/>
-		<!-- Tailwind CSS -->
-		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-		<!-- DaisyUI -->
-		<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css"/>
-		<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/themes.css" rel="stylesheet" type="text/css"/>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-	</head>
-	<body class="min-h-screen preview">
-		<div class="container flex flex-col gap-3 *:border max-w-4xl mx-auto p-8">
-			<div class="collapse collapse-arrow bg-base-100">
-				<input checked="checked" name="my-accordion-2" type="radio"/>
-				<div class="collapse-title text-xl font-medium">Description de l’objet expérimenté</div>
-				<div class="collapse-content">
 
-					<div class="flex flex-col gap-4">
-						<div class="flex gap-4">
-							<!-- Texte contenu -->
-							<div class="w-64 p-8 rounded-lg grow bg-base-200">
-								<p>Le récepteur infrarouge VS1838 est un dispositif électronique permettant de recevoir et
-									décoder des signaux infrarouges, il est principalement utilisé pour effectuer du contrôle à
-									distance. Il est muni d'un filtre de lumière ambiante pour réduire les interférences.</p>
-								<p class="mt-1">Ce composant est fabriqué par de nombreux manufacturiers en Chine, dont <em>Vishay</em>.
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>TP1</title>
+	<link href="./style.css" rel="stylesheet" type="text/css" />
+	<!-- Tailwind CSS -->
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<!-- DaisyUI -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/themes.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen preview">
+	<div class="container flex flex-col gap-3 *:border max-w-4xl mx-auto p-8">
+		<div class="collapse collapse-arrow bg-base-100">
+			<input checked="checked" name="my-accordion-2" type="radio" />
+			<div class="collapse-title text-xl font-medium">Description de l’objet expérimenté</div>
+			<div class="collapse-content">
+
+				<div class="flex flex-col gap-4">
+					<div class="flex gap-4">
+						<!-- Texte contenu -->
+						<div class="w-64 p-8 rounded-lg grow bg-base-200">
+							<p>Le récepteur infrarouge VS1838 est un dispositif électronique permettant de recevoir et
+								décoder des signaux infrarouges, il est principalement utilisé pour effectuer du contrôle à
+								distance. Il est muni d'un filtre de lumière ambiante pour réduire les interférences.</p>
+							<p class="mt-1">Ce composant est fabriqué par de nombreux manufacturiers en Chine, dont
+								<em>Vishay</em>.
+								<a class="link text-info"
+									href="https://latinafy.com/products/vishay-1-ir-sensor-vs1838-tl1838-vs1838b-38khz-remote-control/#:~:text=and%20more.%0A%0A%2D-,Brand%3A%20Vishay,-%2D%20Condition%3A"
+									target="_blank">(Source)</a>
+							</p>
+						</div>
+						<!-- Image du composant -->
+						<div class="card card-sm card-compact w-64 bg-base-200 glass !shadow-none">
+							<figure class="p-2">
+								<img alt="IR Receiver" src="./img/vs1838_pcb.png" />
+							</figure>
+							<div class="card-body">
+								<h2 class="card-title">Récepteur infrarouge VS1838</h2>
+								<div class="card-actions justify-start">
 									<a class="link text-info"
-										href="https://latinafy.com/products/vishay-1-ir-sensor-vs1838-tl1838-vs1838b-38khz-remote-control/#:~:text=and%20more.%0A%0A%2D-,Brand%3A%20Vishay,-%2D%20Condition%3A"
-										target="_blank">(Source)</a>
-								</p>
-							</div>
-							<!-- Image du composant -->
-							<div class="card card-sm card-compact w-64 bg-base-200 glass !shadow-none">
-								<figure class="p-2">
-									<img alt="IR Receiver" src="./img/vs1838_pcb.png"/>
-								</figure>
-								<div class="card-body">
-									<h2 class="card-title">Récepteur infrarouge VS1838</h2>
-									<div class="card-actions justify-start">
-										<a class="link text-info"
-											href="https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit#:~:text=1pcs%20Joystick%20Module%3B-,1pcs%20IR%20Receiver,-%3B%201pcs%20Servo%20Motor"
-											target="_blank">
-											(Source)
-										</a>
-									</div>
+										href="https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit#:~:text=1pcs%20Joystick%20Module%3B-,1pcs%20IR%20Receiver,-%3B%201pcs%20Servo%20Motor"
+										target="_blank">
+										(Source)
+									</a>
 								</div>
 							</div>
 						</div>
-						<!-- Table des caractéristiques -->
-						<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-full">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>Caractéristique
-											<a class="link text-info"
-												href="https://www.sivago.com.cn/upload/pdf/2022/VS1838B.pdf"
-												target="_blank">(Source)</a>
-										</th>
-										<th>Valeur</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Modèle</td>
-										<td>VS1838</td>
-									</tr>
-									<tr>
-										<td>Tension de fonctionnement</td>
-										<td>2.7V - 5.5V</td>
-									</tr>
-									<tr>
-										<td>Fréquence de réception</td>
-										<td>38 kHz (fréquence standard des télécommandes IR)</td>
-									</tr>
-									<tr>
-										<td>Angle de réception</td>
-										<td>Environ 45°</td>
-									</tr>
-									<tr>
-										<td>Portée de réception</td>
-										<td>Jusqu'à 18 mètres</td>
-									</tr>
-									<tr>
-										<td>Courant de fonctionnement</td>
-										<td>0.4 - 1.5 mA</td>
-									</tr>
-									<tr>
-										<td>Protection contre les interférences</td>
-										<td>Intègre un filtre de lumière ambiante</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
 					</div>
-
-				</div>
-			</div>
-			<div class="collapse collapse-arrow bg-base-100">
-				<input name="my-accordion-2" type="radio"/>
-				<div class="collapse-title text-xl font-medium">Usage concret proposé</div>
-				<div class="collapse-content">
-
-					<div class="flex flex-col gap-4">
-						<div class="flex gap-4">
-							<!-- Texte contenu -->
-							<div class="w-64 p-8 rounded-lg grow bg-base-200">
-								<p>Cette technologie nous permettrait de bénéficier d’une communication sans fil
-									sur une courte distance pour à peu près n’importe quel dispositif à faible coût.
-									Une possibilité révolutionnaire nous permet de construire des télécommandes pour
-									tout et n’importe quoi comme une télévision, une auto téléguidée, et bien d’autres choses.
-									Cependant, dans ce projet, je vais me concentrer sur le contrôle télécommandé de lumières
-									LED.</p>
-							</div>
-							<!-- Image télécommandes -->
-							<img alt="IR Remotes" class="w-64 grow rounded-lg overflow-hidden object-cover"
-								  src="./img/remotes.jpg"/>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<div class="collapse collapse-arrow bg-base-100">
-				<input name="my-accordion-2" type="radio"/>
-				<div class="collapse-title text-xl font-medium">Expérimentations</div>
-				<div class="collapse-content">
-
-					<div class="flex gap-4 items-center">
-						<div class="w-full p-8 rounded-lg bg-base-200">
-							<h2 class="text-xl">Expérimentation #1 (Angle)</h2>
-							<h3 class="text-lg mt-4">Objectif</h3>
-							<p class="mt-1">Le but de cette expérimentation est de vérifier jusqu'à quel <strong>angle</strong>
-								le récepteur infrarouge VS1838 est capable de détecter des signaux dans les conditions ambiantes
-								intérieures.</p>
-							<h3 class="text-lg mt-4">Contexte de réalisation</h3>
-							<p class="mt-1">L'expérimentation a été réalisée dans un corridor du CÉGEP Garneau. Le dispositif
-								est placé de façon que le récepteur soit enligné avec le long du corridor. Augmentant
-								progressivement l'angle de l'émetteur par rapport au récepteur, j'émets un signal en direction
-								du récepteur, jusqu'à ce qu'il ne capte plus le signal.</p>
-							<h3 class="text-lg mt-4">Résultats</h3>
-							<p class="mt-1">Malgré l'angle de 45° spécifié, le récepteur infrarouge VS1838 arrivait à capter
-								des signaux provenant de tous les angles. Quoique surprenant, je pense que ce résultat
-								s'explique par le rebondissement du signal infrarouge sur les murs et objets autour, jusqu'au
-								récepteur.</p>
-						</div>
-						<div class="mockup-phone border-primary shrink-0 scale-50 mx-[-105.8px] my-[-219.55px] h-fit w-fit">
-							<div class="mockup-phone-camera"></div>
-							<div class="mockup-phone-display">
-								<video class="w-full h-full object-cover" controls>
-									<source src="./video/experimentation_angle_480p.mp4" type="video/mp4">
-									Your browser does not support HTML video.
-								</video>
-							</div>
-						</div>
-					</div>
-
-					<div class="flex gap-4 items-center">
-						<div class="w-full p-8 rounded-lg bg-base-200">
-							<h2 class="text-xl">Expérimentation #2 (Distance)</h2>
-							<h3 class="text-lg mt-4">Objectif</h3>
-							<p class="mt-1">Le but de cette expérimentation est de vérifier jusqu'à quelle
-								<strong>distance</strong> le récepteur infrarouge VS1838 est capable de détecter des signaux
-								dans les conditions ambiantes intérieures.</p>
-							<h3 class="text-lg mt-4">Contexte de réalisation</h3>
-							<p class="mt-1">L'expérimentation a été réalisée dans un corridor du CÉGEP Garneau. Le dispositif
-								est placé de façon que le récepteur soit enligné avec le long du corridor. Augmentant
-								progressivement la distance, j'émets un signal en direction du récepteur, jusqu'à ce qu'il ne
-								capte plus le signal.</p>
-							<h3 class="text-lg mt-4">Résultats</h3>
-							<p class="mt-1">L'information trouvée pour la distance maximale de réception du capteur VS1838 est
-								18 mètres. Lors de cette expérimentation, j'ai réussi à entre atteindre 20-22 mètres, ce qui bat
-								les atteintes pour ce composant. Mon hypothèse est que tout comme dans l'expérimentation #1, le
-								signal rebondissait sur les murs le long du corridor, permettant une distance plus grande.</p>
-						</div>
-						<div class="mockup-phone border-primary shrink-0 scale-50 mx-[-105.8px] my-[-219.55px] h-fit w-fit">
-							<div class="mockup-phone-camera"></div>
-							<div class="mockup-phone-display">
-								<video class="w-full h-full object-cover" controls>
-									<source src="./video/experimentation_distance_480p.mp4" type="video/mp4">
-									Your browser does not support HTML video.
-								</video>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<div class="collapse collapse-arrow bg-base-100">
-				<input name="my-accordion-2" type="radio"/>
-				<div class="collapse-title text-xl font-medium">Avis sur la technologie</div>
-				<div class="collapse-content">
-
-					<div class="w-full p-8 rounded-lg bg-base-200 grid grid-cols-2 gap-4">
-						<div class="flex flex-col gap-4">
-							<div>
-								<h2 class="text-lg">Longévité</h2>
-								<p class="text-justify mt-1">Le récepteur VS1838 est conçu pour durer plusieurs années avec
-									une utilisation normale.</p>
-							</div>
-							<div>
-								<h2 class="text-lg">Stabilité</h2>
-								<p class="text-justify mt-1">Son filtre de lumière ambiante permet de réduire considérablement
-									les interférences. Cependant, son angle de réception de 45° n'est pas toujours suffisant et
-									nuit à son utilisation.</p>
-							</div>
-							<div>
-								<h2 class="text-lg">Efficacité</h2>
-								<p class="text-justify mt-1">Avec une faible consommation d'énergie (0.4 - 1.5 mA) et une
-									portée suffisante (5-10 mètres), le récepteur infrarouge VS1838 est un choix réfléchit
-									pour les télécommandes et autres dispositifs de contrôle à distance.</p>
-							</div>
-						</div>
-						<div class="flex flex-col gap-4">
-							<div>
-								<h2 class="text-lg">Maintenabilité</h2>
-								<p class="text-justify mt-1">Le composant est très facile à installer et une fois intégré, il
-									ne nécessite pas de maintenance. Si le récepteur brise, il est généralement simple à
-									remplacer, sauf s'il est situé dans un endroit scellé ou fermé.</p>
-							</div>
-							<div>
-								<h2 class="text-lg">Robustesse à la manipulation</h2>
-								<p class="text-justify mt-1">Le VS1838 est assez robuste pour une manipulation normale sans
-									risquer de causer des dommages, mais comme toute pièce électronique, il faut tout de même
-									le manipuler avec un minimum de précaution. Cela fait du VS1838 un bon choix pour des
-									projets électroniques.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="w-full p-8 mt-3 rounded-lg bg-base-200">
-						<div class="flex w-full mb-4">
-							<img alt="VS1838" class="w-64 p-2 grow rounded-lg overflow-hidden object-cover glass-v2"
-								  src="./img/vs1838.png"/>
-							<div class="divider divider-horizontal">VS</div>
-							<img alt="TSOP34438" class="w-64 p-2 grow rounded-lg overflow-hidden object-cover glass-v2"
-								  src="./img/tsop34438.png"/>
-						</div>
-						<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-full">
-							<table class="table">
+					<!-- Table des caractéristiques -->
+					<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-full">
+						<table class="table">
+							<thead>
 								<tr>
-									<th>Caractéristique</th>
-									<th>VS1838B
+									<th>Caractéristique
 										<a class="link text-info" href="https://www.sivago.com.cn/upload/pdf/2022/VS1838B.pdf"
 											target="_blank">(Source)</a>
 									</th>
-									<th>TSOP34438
-										<a class="link text-info" href="https://www.vishay.com/docs/82489/tsop322.pdf"
-											target="_blank">(Source)</a>
-									</th>
+									<th>Valeur</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Modèle</td>
+									<td>VS1838</td>
 								</tr>
 								<tr>
-									<td>Compatibilité des codes IR</td>
-									<td>NEC, RC5, RC6</td>
-									<td>NEC, RC5, RC6, Sony, Mitsubishi</td>
+									<td>Tension de fonctionnement</td>
+									<td>2.7V - 5.5V</td>
 								</tr>
 								<tr>
-									<td>Distance de réception</td>
-									<td>Jusqu'à 18 m</td>
-									<td>Jusqu'à 39 m</td>
+									<td>Fréquence de réception</td>
+									<td>38 kHz (fréquence standard des télécommandes IR)</td>
 								</tr>
 								<tr>
-									<td>Filtre d'interférences / AGC</td>
-									<td>Basique<br>AGC standard</td>
-									<td>Excellente<br>AGC multiples</td>
+									<td>Angle de réception</td>
+									<td>Environ 45°</td>
 								</tr>
 								<tr>
-									<td>Prix</td>
-									<td>≈ 0,35 USD</td>
-									<td>≈ 1.20 USD</td>
+									<td>Portée de réception</td>
+									<td>Jusqu'à 18 mètres</td>
 								</tr>
-							</table>
-						</div>
-						<h2 class="text-xl mt-4">Comparaison et avis final</h2>
-						<p class="mt-1">
-							Le VS1838B est un récepteur infrarouge de qualité standard, idéal et suffisant pour les projets de
-							bricolage et les applications de télécommande à courte portée comme l'utilisation proposée dans ce
-							projet. Cependant, si vous avez besoin d'une portée plus longue, d'une meilleure protection contre
-							les interférences ou bien de supporter plus de protocoles, le TSOP34438 est un meilleur choix, bien
-							que plus cher.
-						</p>
+								<tr>
+									<td>Courant de fonctionnement</td>
+									<td>0.4 - 1.5 mA</td>
+								</tr>
+								<tr>
+									<td>Protection contre les interférences</td>
+									<td>Intègre un filtre de lumière ambiante</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-
 				</div>
+
 			</div>
 		</div>
-	</body>
+		<div class="collapse collapse-arrow bg-base-100">
+			<input name="my-accordion-2" type="radio" />
+			<div class="collapse-title text-xl font-medium">Usage concret proposé</div>
+			<div class="collapse-content">
+
+				<div class="flex flex-col gap-4">
+					<div class="flex gap-4">
+						<!-- Texte contenu -->
+						<div class="w-64 p-8 rounded-lg grow bg-base-200">
+							<p>Cette technologie nous permettrait de bénéficier d’une communication sans fil
+								sur une courte distance pour à peu près n’importe quel dispositif à faible coût.
+								Une possibilité révolutionnaire nous permet de construire des télécommandes pour
+								tout et n’importe quoi comme une télévision, une auto téléguidée, et bien d’autres choses.
+								Cependant, dans ce projet, je vais me concentrer sur le contrôle télécommandé de lumières
+								LED.</p>
+						</div>
+						<!-- Image télécommandes -->
+						<img alt="IR Remotes" class="w-64 grow rounded-lg overflow-hidden object-cover"
+							src="./img/remotes.jpg" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="collapse collapse-arrow bg-base-100">
+			<input name="my-accordion-2" type="radio" />
+			<div class="collapse-title text-xl font-medium">Expérimentations</div>
+			<div class="collapse-content">
+
+				<div class="flex gap-4 items-center">
+					<div class="w-full p-8 rounded-lg bg-base-200">
+						<h2 class="text-xl">Expérimentation #1 (Angle)</h2>
+						<h3 class="text-lg mt-4">Objectif</h3>
+						<p class="mt-1">Le but de cette expérimentation est de vérifier jusqu'à quel <strong>angle</strong>
+							le récepteur infrarouge VS1838 est capable de détecter des signaux dans les conditions ambiantes
+							intérieures.</p>
+						<h3 class="text-lg mt-4">Contexte de réalisation</h3>
+						<p class="mt-1">L'expérimentation a été réalisée dans un corridor du CÉGEP Garneau. Le dispositif
+							est placé de façon que le récepteur soit enligné avec le long du corridor. Augmentant
+							progressivement l'angle de l'émetteur par rapport au récepteur, j'émets un signal en direction
+							du récepteur, jusqu'à ce qu'il ne capte plus le signal.</p>
+						<h3 class="text-lg mt-4">Résultats</h3>
+						<p class="mt-1">Malgré l'angle de 45° spécifié, le récepteur infrarouge VS1838 arrivait à capter
+							des signaux provenant de tous les angles. Quoique surprenant, je pense que ce résultat
+							s'explique par le rebondissement du signal infrarouge sur les murs et objets autour, jusqu'au
+							récepteur.</p>
+					</div>
+					<div class="mockup-phone border-primary shrink-0 scale-50 mx-[-105.8px] my-[-219.55px] h-fit w-fit">
+						<div class="mockup-phone-camera"></div>
+						<div class="mockup-phone-display">
+							<video class="w-full h-full object-cover" controls>
+								<source src="./video/experimentation_angle_480p.mp4" type="video/mp4">
+								Your browser does not support HTML video.
+							</video>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex gap-4 items-center mt-4">
+					<div class="w-full p-8 rounded-lg bg-base-200">
+						<h2 class="text-xl">Expérimentation #2 (Distance)</h2>
+						<h3 class="text-lg mt-4">Objectif</h3>
+						<p class="mt-1">Le but de cette expérimentation est de vérifier jusqu'à quelle
+							<strong>distance</strong> le récepteur infrarouge VS1838 est capable de détecter des signaux
+							dans les conditions ambiantes intérieures.
+						</p>
+						<h3 class="text-lg mt-4">Contexte de réalisation</h3>
+						<p class="mt-1">L'expérimentation a été réalisée dans un corridor du CÉGEP Garneau. Le dispositif
+							est placé de façon que le récepteur soit enligné avec le long du corridor. Augmentant
+							progressivement la distance, j'émets un signal en direction du récepteur, jusqu'à ce qu'il ne
+							capte plus le signal.</p>
+						<h3 class="text-lg mt-4">Résultats</h3>
+						<p class="mt-1">L'information trouvée pour la distance maximale de réception du capteur VS1838 est
+							18 mètres. Lors de cette expérimentation, j'ai réussi à entre atteindre 20-22 mètres, ce qui bat
+							les atteintes pour ce composant. Mon hypothèse est que tout comme dans l'expérimentation #1, le
+							signal rebondissait sur les murs le long du corridor, permettant une distance plus grande.</p>
+					</div>
+					<div class="mockup-phone border-primary shrink-0 scale-50 mx-[-105.8px] my-[-219.55px] h-fit w-fit">
+						<div class="mockup-phone-camera"></div>
+						<div class="mockup-phone-display">
+							<video class="w-full h-full object-cover" controls>
+								<source src="./video/experimentation_distance_480p.mp4" type="video/mp4">
+								Your browser does not support HTML video.
+							</video>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="collapse collapse-arrow bg-base-100">
+			<input name="my-accordion-2" type="radio" />
+			<div class="collapse-title text-xl font-medium">Avis sur la technologie</div>
+			<div class="collapse-content">
+
+				<div class="w-full p-8 rounded-lg bg-base-200 grid grid-cols-2 gap-4">
+					<div class="flex flex-col gap-4">
+						<div>
+							<h2 class="text-lg">Longévité</h2>
+							<p class="text-justify mt-1">Le récepteur VS1838 est conçu pour durer plusieurs années avec
+								une utilisation normale.</p>
+						</div>
+						<div>
+							<h2 class="text-lg">Stabilité</h2>
+							<p class="text-justify mt-1">Son filtre de lumière ambiante permet de réduire considérablement
+								les interférences. Cependant, son angle de réception de 45° n'est pas toujours suffisant et
+								nuit à son utilisation.</p>
+						</div>
+						<div>
+							<h2 class="text-lg">Efficacité</h2>
+							<p class="text-justify mt-1">Avec une faible consommation d'énergie (0.4 - 1.5 mA) et une
+								portée suffisante (5-10 mètres), le récepteur infrarouge VS1838 est un choix réfléchit
+								pour les télécommandes et autres dispositifs de contrôle à distance.</p>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4">
+						<div>
+							<h2 class="text-lg">Maintenabilité</h2>
+							<p class="text-justify mt-1">Le composant est très facile à installer et une fois intégré, il
+								ne nécessite pas de maintenance. Si le récepteur brise, il est généralement simple à
+								remplacer, sauf s'il est situé dans un endroit scellé ou fermé.</p>
+						</div>
+						<div>
+							<h2 class="text-lg">Robustesse à la manipulation</h2>
+							<p class="text-justify mt-1">Le VS1838 est assez robuste pour une manipulation normale sans
+								risquer de causer des dommages, mais comme toute pièce électronique, il faut tout de même
+								le manipuler avec un minimum de précaution. Cela fait du VS1838 un bon choix pour des
+								projets électroniques.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full p-8 mt-3 rounded-lg bg-base-200">
+					<div class="flex w-full mb-4">
+						<img alt="VS1838" class="w-64 p-2 grow rounded-lg overflow-hidden object-cover glass-v2"
+							src="./img/vs1838.png" />
+						<div class="divider divider-horizontal">VS</div>
+						<img alt="TSOP34438" class="w-64 p-2 grow rounded-lg overflow-hidden object-cover glass-v2"
+							src="./img/tsop34438.png" />
+					</div>
+					<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-full">
+						<table class="table">
+							<tr>
+								<th>Caractéristique</th>
+								<th>VS1838B
+									<a class="link text-info" href="https://www.sivago.com.cn/upload/pdf/2022/VS1838B.pdf"
+										target="_blank">(Source)</a>
+								</th>
+								<th>TSOP34438
+									<a class="link text-info" href="https://www.vishay.com/docs/82489/tsop322.pdf"
+										target="_blank">(Source)</a>
+								</th>
+							</tr>
+							<tr>
+								<td>Compatibilité des codes IR</td>
+								<td>NEC, RC5, RC6</td>
+								<td>NEC, RC5, RC6, Sony, Mitsubishi</td>
+							</tr>
+							<tr>
+								<td>Distance de réception</td>
+								<td>Jusqu'à 18 m</td>
+								<td>Jusqu'à 39 m</td>
+							</tr>
+							<tr>
+								<td>Filtre d'interférences / AGC</td>
+								<td>Basique<br>AGC standard</td>
+								<td>Excellente<br>AGC multiples</td>
+							</tr>
+							<tr>
+								<td>Prix</td>
+								<td>≈ 0,35 USD</td>
+								<td>≈ 1.20 USD</td>
+							</tr>
+						</table>
+					</div>
+					<h2 class="text-xl mt-4">Comparaison et avis final</h2>
+					<p class="mt-1">
+						Le VS1838B est un récepteur infrarouge de qualité standard, idéal et suffisant pour les projets de
+						bricolage et les applications de télécommande à courte portée comme l'utilisation proposée dans ce
+						projet. Cependant, si vous avez besoin d'une portée plus longue, d'une meilleure protection contre
+						les interférences ou bien de supporter plus de protocoles, le TSOP34438 est un meilleur choix, bien
+						que plus cher.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
