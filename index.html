@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-		<title>Hello world!</title>
+		<title>TP1</title>
 		<link href="./style.css" rel="stylesheet" type="text/css"/>
 		<!-- Tailwind CSS -->
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -19,25 +19,96 @@
 				<div class="collapse-title text-xl font-medium">Description de l’objet expérimenté</div>
 				<div class="collapse-content relative">
 
-					<div class="flex justify-between gap-4">
-						<div class="card card-sm card-compact w-64 grow bg-base-200">
-							<div class="card-body">
-								<div class="card-title">
-
+					<div class="flex flex-col gap-4">
+						<div class="flex gap-4">
+							<div class="card card-compact w-64 grow bg-base-200">
+								<div class="card-body">
+									<p>Le récepteur infrarouge VS1838 est un dispositif électronique permettant de
+										recevoir et décoder des signaux infrarouges, il est principalement
+										utilisé pour effectuer du contrôle à distance. Il est muni d'un filtre
+										de lumière ambiante pour réduire les interférences.</p>
+									<p>Ce composant est fabriqué par de nombreux manufacturiers en Chine, dont
+										<a
+											class="link text-info"
+											href="https://latinafy.com/products/vishay-1-ir-sensor-vs1838-tl1838-vs1838b-38khz-remote-control/#:~:text=and%20more.%0A%0A%2D-,Brand%3A%20Vishay,-%2D%20Condition%3A"
+											target="_blank">
+											<em>Vishay</em>
+										</a>.
+									</p>
+								</div>
+							</div>
+							<div class="card card-sm card-compact w-64 bg-base-200 glass !shadow-none">
+								<figure class="p-2">
+									<img alt="IR Receiver" src="./img/ir_receiver_crop.png"/>
+								</figure>
+								<div class="card-body">
+									<h2 class="card-title">Récepteur infrarouge VS1838</h2>
+									<div class="card-actions justify-end">
+										<a class="btn btn-sm btn-soft btn-primary"
+											href="https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit#:~:text=1pcs%20Joystick%20Module%3B-,1pcs%20IR%20Receiver,-%3B%201pcs%20Servo%20Motor"
+											target="_blank">
+											Source
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="card card-xs card-compact w-64 bg-base-200 glass !shadow-none">
-							<figure class="p-2">
-								<img alt="IR Receiver" src="./img/ir_receiver_crop.png"/>
-							</figure>
-							<div class="card-body">
-								<div class="card-actions justify-between items-center">
-									<h2 class="card-title">Récepteur infrarouge</h2>
-									<button class="btn btn-sm btn-soft btn-primary">Source</button>
-								</div>
-							</div>
+						<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-full">
+							<table class="table">
+								<!-- head -->
+								<thead>
+									<tr>
+										<th>Caractéristique</th>
+										<th>Valeur</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- row 1 -->
+									<tr>
+										<td>Modèle</td>
+										<td>VS1838</td>
+									</tr>
+									<!-- row 2 -->
+									<tr>
+										<td>Tension de fonctionnement</td>
+										<td>2.7V - 5.5V</td>
+									</tr>
+									<!-- row 3 -->
+									<tr>
+										<td>Fréquence de réception</td>
+										<td>38 kHz (fréquence standard des télécommandes IR)</td>
+									</tr>
+									<!-- row 4 -->
+									<tr>
+										<td>Angle de réception</td>
+										<td>Environ 45°</td>
+									</tr>
+									<!-- row 5 -->
+									<tr>
+										<td>Portée de réception</td>
+										<td>5-10 mètres selon la puissance de l’émetteur</td>
+									</tr>
+									<!-- row 6 -->
+									<tr>
+										<td>Courant de fonctionnement</td>
+										<td>0.4 - 1.5 mA</td>
+									</tr>
+									<!-- row 7 -->
+									<tr>
+										<td>Sortie du signal</td>
+										<td>Signal numérique (LOW en présence d’un signal IR valide)</td>
+									</tr>
+									<!-- row 8 -->
+									<tr>
+										<td>Protection contre les interférences</td>
+										<td>Intègre un filtre de lumière ambiante</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
+						<a class="btn btn-sm btn-soft btn-primary w-fit mx-auto mt-2"
+							href="https://www.sivago.com.cn/upload/pdf/2022/VS1838B.pdf"
+							target="_blank">Source pour les caractéristiques</a>
 					</div>
 
 				</div>
