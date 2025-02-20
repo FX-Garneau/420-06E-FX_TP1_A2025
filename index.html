@@ -126,13 +126,72 @@
 				<input name="my-accordion-2" type="radio"/>
 				<div class="collapse-title text-xl font-medium">Expérimentations</div>
 				<div class="collapse-content">
-					<p>...</p>
+
+					<div class="flex gap-4 items-center">
+						<div class="w-full p-8 rounded-lg bg-base-200">
+							<h2 class="text-xl">Expérimentation #1 (Angle)</h2>
+							<h3 class="text-lg mt-4">Objectif</h3>
+							<p class="mt-1">Le but de cette expérimentation est de vérifier jusqu'à quel <strong>angle</strong>
+								le récepteur infrarouge VS1838 est capable de détecter des signaux dans les conditions ambiantes
+								intérieures.</p>
+							<h3 class="text-lg mt-4">Contexte de réalisation</h3>
+							<p class="mt-1">L'expérimentation a été réalisée dans un corridor du CÉGEP Garneau. Le dispositif
+								est placé de façon que le récepteur soit enligné avec le long du corridor. Augmentant
+								progressivement l'angle de l'émetteur par rapport au récepteur, j'émets un signal en direction
+								du récepteur, jusqu'à ce qu'il ne capte plus le signal.</p>
+							<h3 class="text-lg mt-4">Résultats</h3>
+							<p class="mt-1">Malgré l'angle de 45° spécifié, le récepteur infrarouge VS1838 arrivait à capter
+								des signaux provenant de tous les angles. Quoique surprenant, je pense que ce résultat
+								s'explique par le rebondissement du signal infrarouge sur les murs et objets autour, jusqu'au
+								récepteur.</p>
+						</div>
+						<div class="mockup-phone border-primary shrink-0 scale-50 mx-[-105.8px] my-[-219.55px] h-fit w-fit">
+							<div class="mockup-phone-camera"></div>
+							<div class="mockup-phone-display">
+								<video class="w-full h-full object-cover" controls>
+									<source src="./video/experimentation_angle_480p.mp4" type="video/mp4">
+									Your browser does not support HTML video.
+								</video>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex gap-4 items-center">
+						<div class="w-full p-8 rounded-lg bg-base-200">
+							<h2 class="text-xl">Expérimentation #2 (Distance)</h2>
+							<h3 class="text-lg mt-4">Objectif</h3>
+							<p class="mt-1">Le but de cette expérimentation est de vérifier jusqu'à quelle
+								<strong>distance</strong> le récepteur infrarouge VS1838 est capable de détecter des signaux
+								dans les conditions ambiantes intérieures.</p>
+							<h3 class="text-lg mt-4">Contexte de réalisation</h3>
+							<p class="mt-1">L'expérimentation a été réalisée dans un corridor du CÉGEP Garneau. Le dispositif
+								est placé de façon que le récepteur soit enligné avec le long du corridor. Augmentant
+								progressivement la distance, j'émets un signal en direction du récepteur, jusqu'à ce qu'il ne
+								capte plus le signal.</p>
+							<h3 class="text-lg mt-4">Résultats</h3>
+							<p class="mt-1">L'information trouvée pour la distance maximale de réception du capteur VS1838 est
+								18 mètres. Lors de cette expérimentation, j'ai réussi à entre atteindre 20-22 mètres, ce qui bat
+								les atteintes pour ce composant. Mon hypothèse est que tout comme dans l'expérimentation #1, le
+								signal rebondissait sur les murs le long du corridor, permettant une distance plus grande.</p>
+						</div>
+						<div class="mockup-phone border-primary shrink-0 scale-50 mx-[-105.8px] my-[-219.55px] h-fit w-fit">
+							<div class="mockup-phone-camera"></div>
+							<div class="mockup-phone-display">
+								<video class="w-full h-full object-cover" controls>
+									<source src="./video/experimentation_distance_480p.mp4" type="video/mp4">
+									Your browser does not support HTML video.
+								</video>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<div class="collapse collapse-arrow bg-base-100">
 				<input name="my-accordion-2" type="radio"/>
 				<div class="collapse-title text-xl font-medium">Avis sur la technologie</div>
 				<div class="collapse-content">
+
 					<div class="w-full p-8 rounded-lg bg-base-200 grid grid-cols-2 gap-4">
 						<div class="flex flex-col gap-4">
 							<div>
@@ -222,6 +281,7 @@
 							que plus cher.
 						</p>
 					</div>
+
 				</div>
 			</div>
 		</div>
