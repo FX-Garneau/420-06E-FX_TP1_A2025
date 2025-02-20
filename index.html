@@ -17,26 +17,26 @@
 			<div class="collapse collapse-arrow bg-base-100">
 				<input checked="checked" name="my-accordion-2" type="radio"/>
 				<div class="collapse-title text-xl font-medium">Description de l’objet expérimenté</div>
-				<div class="collapse-content relative">
+				<div class="collapse-content">
 
 					<div class="flex flex-col gap-4">
 						<div class="flex gap-4">
-							<div class="card card-compact w-64 grow bg-base-200">
-								<div class="card-body">
-									<p>Le récepteur infrarouge VS1838 est un dispositif électronique permettant de
-										recevoir et décoder des signaux infrarouges, il est principalement
-										utilisé pour effectuer du contrôle à distance. Il est muni d'un filtre
-										de lumière ambiante pour réduire les interférences.</p>
-									<p>Ce composant est fabriqué par de nombreux manufacturiers en Chine, dont
-										<a
-											class="link text-info"
-											href="https://latinafy.com/products/vishay-1-ir-sensor-vs1838-tl1838-vs1838b-38khz-remote-control/#:~:text=and%20more.%0A%0A%2D-,Brand%3A%20Vishay,-%2D%20Condition%3A"
-											target="_blank">
-											<em>Vishay</em>
-										</a>.
-									</p>
-								</div>
+							<!-- Texte contenu -->
+							<div class="w-64 p-8 rounded-lg grow bg-base-200">
+								<p>Le récepteur infrarouge VS1838 est un dispositif électronique permettant de
+									recevoir et décoder des signaux infrarouges, il est principalement
+									utilisé pour effectuer du contrôle à distance. Il est muni d'un filtre
+									de lumière ambiante pour réduire les interférences.</p>
+								<p>Ce composant est fabriqué par de nombreux manufacturiers en Chine, dont
+									<a
+										class="link text-info"
+										href="https://latinafy.com/products/vishay-1-ir-sensor-vs1838-tl1838-vs1838b-38khz-remote-control/#:~:text=and%20more.%0A%0A%2D-,Brand%3A%20Vishay,-%2D%20Condition%3A"
+										target="_blank">
+										<em>Vishay</em>
+									</a>.
+								</p>
 							</div>
+							<!-- Image du composant -->
 							<div class="card card-sm card-compact w-64 bg-base-200 glass !shadow-none">
 								<figure class="p-2">
 									<img alt="IR Receiver" src="./img/ir_receiver_crop.png"/>
@@ -53,6 +53,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- Table des caractéristiques -->
 						<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-full">
 							<table class="table">
 								<!-- head -->
@@ -117,7 +118,24 @@
 				<input name="my-accordion-2" type="radio"/>
 				<div class="collapse-title text-xl font-medium">Usage concret proposé</div>
 				<div class="collapse-content">
-					<p>...</p>
+
+					<div class="flex flex-col gap-4">
+						<div class="flex gap-4">
+							<!-- Texte contenu -->
+							<div class="w-64 p-8 rounded-lg grow bg-base-200">
+								<p>Cette technologie nous permettrait de bénéficier d’une communication sans fil
+									sur une courte distance pour à peu près n’importe quel dispositif à faible coût.
+									Une possibilité révolutionnaire nous permet de construire des télécommandes pour
+									tout et n’importe quoi comme une télévision, une auto téléguidée, et bien d’autres choses.
+									Cependant, dans ce projet, je vais me concentrer sur le contrôle télécommandé de lumières
+									LED.</p>
+							</div>
+							<!-- Image télécommandes -->
+							<img alt="IR Remotes" class="w-64 grow rounded-lg overflow-hidden object-cover"
+								  src="./img/remotes.jpg"/>
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<div class="collapse collapse-arrow bg-base-100">
